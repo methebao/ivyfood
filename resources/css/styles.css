@@ -84,6 +84,31 @@ h2:after {
   color: #e67e22;
   margin-bottom: 10px;
 }
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  line-height: 1.2rem;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+/* ---- LINKS ---- */
+a:link,
+a:active {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
 /* ---- BUTTONS ---- */
 
 .btn:link,
@@ -131,6 +156,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 .hero-text-box {
   position: absolute;
@@ -249,9 +275,64 @@ header {
   float: left;
   margin-right: 30px;
 }
-
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+/*------------------------------------*/
+/* CITIES */
+/*------------------------------------*/
+.section-cities {
+  padding: 60px 0;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
+}
+/*------------------------------------*/
+/* CUSTOMERS */
+/*------------------------------------*/
+.section-customers {
+  padding: 60px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 1.45rem;
+  position: relative;
+  margin-top: 40px;
+}
+cite {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 25px;
+}
+blockquote:before {
+  content: '\201C';
+  font-size: 5rem;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10 px;
+  vertical-align: middle;
+  padding-right: 10px;
 }
