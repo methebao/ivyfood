@@ -202,6 +202,14 @@ header {
   float: left;
   margin-top: 20px;
 }
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+/* Main Navigation */
 .main-nav {
   float: right;
   list-style: none;
@@ -225,6 +233,30 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
   padding: 10px 0;
+}
+/* Main Navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 0 1.5px 1.5px rgb(240, 240, 240);
+}
+.sticky .main-nav {
+  margin-top: 18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 16px 0;
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 /*------------------------------------*/
 /* FOOTER */
