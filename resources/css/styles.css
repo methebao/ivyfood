@@ -8,12 +8,14 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 .clearfix:after {
   content: '';
@@ -26,6 +28,9 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+section {
+  padding: 60px 0;
 }
 
 /* ---- HEADINGS ---- */
@@ -41,17 +46,17 @@ h1 {
   margin: 0;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 2.3rem;
+  font-size: 2.4em;
   word-spacing: 4px;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
 }
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   margin-bottom: 15px;
 }
 h2:after {
@@ -65,7 +70,7 @@ h2:after {
 }
 /* ---- PARAGRAPHS ---- */
 .long-copy {
-  line-height: 1.45rem;
+  line-height: 1.45em;
   width: 70%;
   margin: 0 15%;
 }
@@ -74,12 +79,12 @@ h2:after {
   padding: 1%;
 }
 .box p {
-  font-size: 0.9rem;
-  line-height: 1.45rem;
+  font-size: 0.9em;
+  line-height: 1.45em;
 }
 /* ---- ICONS ---- */
 .icon-big {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
@@ -89,11 +94,15 @@ h2:after {
   width: 30px;
   text-align: center;
   color: #e67e22;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-right: 5px;
-  line-height: 1.2rem;
+  line-height: 1.2em;
   vertical-align: middle;
   margin-top: -5px;
+}
+.icon-social {
+  color: rgb(158, 158, 158);
+  border: 0;
 }
 .icon-inner {
   border-bottom: 0 !important;
@@ -195,7 +204,7 @@ header {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
 }
@@ -204,13 +213,78 @@ header {
   border-bottom: 2px solid #e67e22;
   padding: 10px 0;
 }
-
+/*------------------------------------*/
+/* FOOTER */
+/*------------------------------------*/
+footer {
+  padding: 40px 0;
+  background-color: #333;
+  font-size: 0.8em;
+}
+.footer-nav {
+  float: left;
+  list-style: none;
+}
+.social-links {
+  float: right;
+  list-style: none;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.social-links li a:link,
+.footer-nav li a:visited,
+.social-links li a:visited {
+  color: rgb(148, 148, 148);
+  text-decoration: none;
+  border: 0;
+  transition: color 0.2s;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 1.3em;
+}
+.footer-nav li a:hover,
+.social-links li a:hover,
+.footer-nav li a:active,
+.social-links li a:active {
+  color: #e67e22;
+  padding: 2px 0;
+}
+.icon-social-facebook,
+.icon-social-instagram,
+.icon-social-twitter,
+.icon-social-youtube {
+  transition: color 0.2s;
+}
+.icon-social-facebook:hover {
+  color: #3b5998;
+}
+.icon-social-instagram:hover {
+  color: #517fa4;
+}
+.icon-social-twitter:hover {
+  color: #00aced;
+}
+.icon-social-youtube:hover {
+  color: #dd4b39;
+}
+footer p {
+  color: rgb(148, 148, 148);
+  text-align: center;
+  margin-top: 20px;
+}
 /*------------------------------------*/
 /* FEATURES */
 /*------------------------------------*/
-.section-features {
-  padding: 60px 0;
-}
+
 .section-features .long-copy {
   margin-bottom: 40px;
 }
@@ -250,7 +324,6 @@ header {
 /* HOWITWORKS */
 /*------------------------------------*/
 .section-howitworks {
-  padding: 60px 0;
   background-color: rgb(238, 238, 238);
 }
 
@@ -281,7 +354,7 @@ header {
   height: 55px;
   text-align: center;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   float: left;
   margin-right: 30px;
 }
@@ -297,9 +370,7 @@ header {
 /*------------------------------------*/
 /* CITIES */
 /*------------------------------------*/
-.section-cities {
-  padding: 60px 0;
-}
+
 .box img {
   width: 100%;
   height: auto;
@@ -312,7 +383,6 @@ header {
 /* CUSTOMERS */
 /*------------------------------------*/
 .section-customers {
-  padding: 60px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
     url(img/back-customers.jpg);
   background-size: cover;
@@ -322,18 +392,18 @@ header {
 blockquote {
   padding: 2%;
   font-style: italic;
-  line-height: 1.45rem;
+  line-height: 1.45em;
   position: relative;
   margin-top: 40px;
 }
 cite {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   margin-top: 25px;
 }
 blockquote:before {
   content: '\201C';
-  font-size: 5rem;
+  font-size: 5em;
   display: block;
   position: absolute;
   top: -5px;
@@ -350,7 +420,6 @@ cite img {
 /* PLANS */
 /*------------------------------------*/
 .section-plans {
-  padding: 60px 0;
   background-color: #f4f4f4;
 }
 .plan-box {
@@ -369,17 +438,17 @@ cite img {
   border: 0;
 }
 .plan-price {
-  font-size: 3rem;
+  font-size: 2.4em;
   margin-bottom: 10px;
   font-weight: 100;
 }
 .plan-price span {
-  font-size: 1rem;
+  font-size: 0.7em;
   font-weight: 300;
   color: #e67e22;
 }
 .plan-price-meal {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 .plan-box ul {
   list-style: none;
@@ -390,9 +459,7 @@ cite img {
 /*------------------------------------*/
 /* FORM */
 /*------------------------------------*/
-.section-form {
-  padding: 60px 0;
-}
+
 .contact-form {
   width: 60%;
   margin: 0 auto;
