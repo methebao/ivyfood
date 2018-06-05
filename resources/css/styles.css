@@ -180,9 +180,9 @@ header {
       from(rgba(0, 0, 0, 0.699)),
       to(rgba(0, 0, 0, 0.699))
     ),
-    url(img/hero.jpg);
+    url(img/hero-min.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
-    url(img/hero.jpg);
+    url(img/hero-min.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -455,9 +455,9 @@ footer p {
       from(rgba(0, 0, 0, 0.795)),
       to(rgba(0, 0, 0, 0.795))
     ),
-    url(img/back-customers.jpg);
+    url(img/back-customers-min.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
-    url(img/back-customers.jpg);
+    url(img/back-customers-min.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
