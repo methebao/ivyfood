@@ -2,9 +2,8 @@
 
 An responsive website created for Food Company
 
-## DEMO
-
-Live :
+## Live demo : 
+https://methebao.github.io/ivy/
 
 ## Built With
 
